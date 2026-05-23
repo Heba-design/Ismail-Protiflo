@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Ismail Mohamed | Data Analyst</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+<!-- Portfolio Styles -->
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ── NAVBAR ─────────────────────────── -->
+<nav id="navbar">
+  <a href="#about" class="nav-logo" onclick="scrollToSection(event,'about')">
+    <span class="logo-dot"></span>
+    <span class="logo-full">Ismail-Mohamed</span><span class="logo-short">IM</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#about" onclick="scrollToSection(event,'about')" class="active">About</a></li>
+    <li><a href="#skills" onclick="scrollToSection(event,'skills')">Skills</a></li>
+    <li><a href="#services" onclick="scrollToSection(event,'services')">Services</a></li>
+    <li><a href="#projects" onclick="scrollToSection(event,'projects')">Projects</a></li>
+    <li><a href="#experience" onclick="scrollToSection(event,'experience')">Experience</a></li>
+    <li><a href="#contact" onclick="scrollToSection(event,'contact')">Contact</a></li>
+  </ul>
+  <div class="nav-right">
+    <a href="Ismail_Mohamed_CV.pdf" download="Ismail_Mohamed_CV.pdf" class="btn-outline">
+      <i class="fa-solid fa-download"></i> Download CV
+    </a>
+    <a href="#contact" class="btn-primary" onclick="scrollToSection(event,'contact')">Get in Touch</a>
+    <button class="mobile-menu-btn" onclick="toggleMobileMenu()" aria-label="Menu">
+      <span id="mb1"></span><span id="mb2"></span><span id="mb3"></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile Nav -->
+<div class="mobile-nav" id="mobileNav">
+  <a href="#about" onclick="scrollToSection(event,'about');closeMobileMenu()">About</a>
+  <a href="#skills" onclick="scrollToSection(event,'skills');closeMobileMenu()">Skills</a>
+  <a href="#services" onclick="scrollToSection(event,'services');closeMobileMenu()">Services</a>
+  <a href="#projects" onclick="scrollToSection(event,'projects');closeMobileMenu()">Projects</a>
+  <a href="#experience" onclick="scrollToSection(event,'experience');closeMobileMenu()">Experience</a>
+  <a href="#contact" onclick="scrollToSection(event,'contact');closeMobileMenu()">Contact</a>
+  <a href="Ismail_Mohamed_CV.pdf" download="Ismail_Mohamed_CV.pdf" onclick="closeMobileMenu()">
+    <i class="fa-solid fa-download"></i> Download CV
+  </a>
+</div>
+
+<!-- ══════════════════════════════════════════ -->
+<!-- ABOUT / HERO -->
+<!-- ══════════════════════════════════════════ -->
+<section id="about">
+  <div class="hero-grid"></div>
+  <div class="hero-glow"></div>
+  <div class="hero-glow2"></div>
+  <div class="hero-inner">
+    <div class="hero-left">
+      <div class="hero-badge">
+        <span class="live"></span>
+        Available for Projects
+      </div>
+      <h1 class="hero-title">
+        Turning Raw Data<br>
+        Into <span class="highlight">Meaningful</span><br>
+        <span class="line2">Insights</span>
+      </h1>
+      <p class="hero-sub">
+        I'm <strong>Ismail Mohamed</strong>, a Data Analyst passionate about finding patterns in data and transforming them into clear, actionable business intelligence.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn-primary" onclick="scrollToSection(event,'projects')">View My Work <i class="fa-solid fa-right-long" style="color: rgb(255, 255, 255);"></i></a>
+        <a href="Ismail_Mohamed_CV.pdf" download="Ismail_Mohamed_CV.pdf" class="btn-outline">
+          <i class="fa-solid fa-download"></i> Download CV
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-chip">
+          <div class="stat-num">3+</div>
+          <div class="stat-label">Projects Completed</div>
+        </div>
+        <div class="stat-chip">
+          <div class="stat-num">4</div>
+          <div class="stat-label">Core Tools</div>
+        </div>
+        <div class="stat-chip">
+          <div class="stat-num">100%</div>
+          <div class="stat-label">Client Focus</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-card">
+      <div class="hc-header">
+        <div class="hc-avatar">IM</div>
+        <div>
+          <div class="hc-name">Ismail Mohamed</div>
+          <div class="hc-role">DATA ANALYST</div>
+          <div class="hc-status">
+            <span class="status-dot"></span>
+            Available for freelance work
+          </div>
+        </div>
+      </div>
+
+      <div class="mini-chart">
+        <div class="mc-label">Monthly Performance Index</div>
+        <div class="mc-bars">
+          <div class="mc-bar"></div>
+          <div class="mc-bar"></div>
+          <div class="mc-bar"></div>
+          <div class="mc-bar"></div>
+          <div class="mc-bar"></div>
+          <div class="mc-bar"></div>
+          <div class="mc-bar"></div>
+        </div>
+      </div>
+
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:16px 0">
+        <div style="background:var(--gray-50);border-radius:10px;padding:12px">
+          <div style="font-family:var(--font-mono);font-size:18px;font-weight:700;color:var(--blue-800)">98%</div>
+          <div style="font-size:11px;color:var(--gray-400);margin-top:2px">Data Accuracy</div>
+        </div>
+        <div style="background:var(--accent-l);border-radius:10px;padding:12px">
+          <div style="font-family:var(--font-mono);font-size:18px;font-weight:700;color:var(--blue-800)">↑ 43%</div>
+          <div style="font-size:11px;color:var(--blue-600);margin-top:2px">Insights Delivered</div>
+        </div>
+      </div>
+
+      <div class="mc-label" style="margin-bottom:8px">Core Tech Stack</div>
+      <div class="tool-pills">
+        <span class="tool-pill">Python</span>
+        <span class="tool-pill">Power BI</span>
+        <span class="tool-pill">SQL</span>
+        <span class="tool-pill">Excel</span>
+        <span class="tool-pill">Pandas</span>
+        <span class="tool-pill">Matplotlib</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════ -->
+<!-- SKILLS -->
+<!-- ══════════════════════════════════════════ -->
+<section id="skills">
+  <div class="sec-inner">
+    <div class="reveal">
+      <div class="sec-label">What I Know</div>
+      <h2 class="sec-title">Technical Skills</h2>
+      <p class="sec-sub">A focused toolkit built around real data workflows — from raw extraction to polished visualizations.</p>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-card reveal reveal-d1" data-skill="90">
+        <div class="skill-icon"><i class="fa-solid fa-chart-column" style="color: rgb(69, 136, 189);"></i></div>
+        <div class="skill-name">Excel</div>
+        <div class="skill-desc">Advanced data analysis, pivot tables, complex formulas</div>
+        <div class="skill-bar-wrap"><div class="skill-bar" data-w="90"></div></div>
+      </div>
+      <div class="skill-card reveal reveal-d2" data-skill="85">
+        <div class="skill-icon"><i class="fa-solid fa-arrow-trend-up" style="color: rgb(69, 136, 189);"></i></div>
+        <div class="skill-name">Power BI</div>
+        <div class="skill-desc">Dashboards, DAX, interactive reports & KPI tracking</div>
+        <div class="skill-bar-wrap"><div class="skill-bar" data-w="85"></div></div>
+      </div>
+      <div class="skill-card reveal reveal-d3" data-skill="80">
+        <div class="skill-icon"><i class="fa-brands fa-python" style="color: rgb(57, 125, 178);"></i></div>
+        <div class="skill-name">Python</div>
+        <div class="skill-desc">Pandas, NumPy, Matplotlib — data wrangling & visualization</div>
+        <div class="skill-bar-wrap"><div class="skill-bar" data-w="80"></div></div>
+      </div>
+      <div class="skill-card reveal reveal-d4" data-skill="82">
+        <div class="skill-icon">️<i class="fa-solid fa-database" style="color: rgb(57, 125, 178);"></i></div>
+        <div class="skill-name">SQL</div>
+        <div class="skill-desc">Complex queries, joins, aggregations & database analysis</div>
+        <div class="skill-bar-wrap"><div class="skill-bar" data-w="82"></div></div>
+      </div>
+      <div class="skill-card reveal reveal-d1">
+        <div class="skill-icon"><i class="fa-solid fa-broom" style="color: rgb(69, 136, 189);"></i></div>
+        <div class="skill-name">Data Cleaning</div>
+        <div class="skill-desc">Structuring and preparing raw data for reliable analysis</div>
+        <div class="skill-bar-wrap"><div class="skill-bar" data-w="88"></div></div>
+      </div>
+      <div class="skill-card reveal reveal-d2">
+        <div class="skill-icon"><i class="fa-solid fa-chart-pie" style="color: rgb(69, 136, 189);"></i></div>
+        <div class="skill-name">Data Visualization</div>
+        <div class="skill-desc">Turning numbers into clear, compelling visual stories</div>
+        <div class="skill-bar-wrap"><div class="skill-bar" data-w="84"></div></div>
+      </div>
+      <div class="skill-card reveal reveal-d3">
+        <div class="skill-icon"><i class="fa-solid fa-chart-line" style="color: rgb(60, 141, 198);"></i></div>
+        <div class="skill-name">Statistics</div>
+        <div class="skill-desc">Descriptive stats, correlation, trend analysis</div>
+        <div class="skill-bar-wrap"><div class="skill-bar" data-w="75"></div></div>
+      </div>
+      <div class="skill-card reveal reveal-d4">
+        <div class="skill-icon"><i class="fa-solid fa-puzzle-piece" style="color: rgb(69, 136, 189);"></i></div>
+        <div class="skill-name">Problem Solving</div>
+        <div class="skill-desc">Analytical thinking to find actionable business solutions</div>
+        <div class="skill-bar-wrap"><div class="skill-bar" data-w="92"></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════ -->
+<!-- SERVICES -->
+<!-- ══════════════════════════════════════════ -->
+<section id="services">
+  <div class="sec-inner">
+    <div class="reveal">
+      <div class="sec-label">What I Offer</div>
+      <h2 class="sec-title">Services</h2>
+      <p class="sec-sub">End-to-end data services designed to help your business make smarter, faster decisions.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card reveal reveal-d1">
+        <div class="srv-num">01</div>
+        <div class="srv-icon"><i class="fa-solid fa-chart-column" style="color: rgb(69, 136, 189);"></i></div>
+        <div class="srv-title">Data Analysis</div>
+        <div class="srv-desc">Deep-dive analysis of your datasets to uncover hidden trends, patterns, and actionable insights that drive smarter decisions.</div>
+      </div>
+      <div class="service-card reveal reveal-d2">
+        <div class="srv-num">02</div>
+        <div class="srv-icon"><i class="fa-solid fa-chalkboard" style="color: rgb(69, 136, 189);"></i></div>
+        <div class="srv-title">Dashboard Creation</div>
+        <div class="srv-desc">Beautiful, interactive Power BI dashboards that give your team real-time visibility into KPIs and business performance.</div>
+      </div>
+      <div class="service-card reveal reveal-d3">
+        <div class="srv-num">03</div>
+        <div class="srv-icon"><i class="fa-solid fa-broom" style="color: rgb(69, 136, 189);"></i></div>
+        <div class="srv-title">Data Cleaning</div>
+        <div class="srv-desc">Transform messy, inconsistent raw data into clean, structured datasets ready for reliable analysis and reporting.</div>
+      </div>
+      <div class="service-card reveal reveal-d4">
+        <div class="srv-num">04</div>
+        <div class="srv-icon"><i class="fa-regular fa-clipboard" style="color: rgb(69, 136, 189);"></i></div>
+        <div class="srv-title">Business Reports</div>
+        <div class="srv-desc">Professional, easy-to-read reports that translate complex data into clear narratives for decision-makers at every level.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════ -->
+<!-- PROJECTS -->
+<!-- ══════════════════════════════════════════ -->
+<section id="projects">
+  <div class="sec-inner">
+    <div class="reveal">
+      <div class="sec-label">My Work</div>
+      <h2 class="sec-title">Featured Projects</h2>
+      <p class="sec-sub">Real-world projects showcasing data analysis, visualization, and business intelligence work.</p>
+    </div>
+    <div class="projects-grid">
+
+      <!-- Project 1 -->
+      <div class="proj-card reveal reveal-d1">
+        <div class="proj-preview" style="background:linear-gradient(135deg,#EBF4FD,#C8E1F8)">
+          <svg viewBox="0 0 260 110" xmlns="http://www.w3.org/2000/svg">
+            <text x="8" y="14" font-size="9" fill="#1A5FAA" font-family="Space Mono,monospace" font-weight="700">SALES PERFORMANCE</text>
+            <line x1="30" y1="20" x2="30" y2="88" stroke="#90C3F1" stroke-width="1"/>
+            <line x1="30" y1="88" x2="250" y2="88" stroke="#90C3F1" stroke-width="1"/>
+            <rect x="38" y="55" width="20" height="33" rx="3" fill="#90C3F1"/>
+            <rect x="65" y="42" width="20" height="46" rx="3" fill="#3B8FE0"/>
+            <rect x="92" y="60" width="20" height="28" rx="3" fill="#90C3F1"/>
+            <rect x="119" y="35" width="20" height="53" rx="3" fill="#3B8FE0"/>
+            <rect x="146" y="48" width="20" height="40" rx="3" fill="#90C3F1"/>
+            <rect x="173" y="28" width="20" height="60" rx="3" fill="#1A5FAA"/>
+            <rect x="200" y="40" width="20" height="48" rx="3" fill="#3B8FE0"/>
+            <polyline points="48,55 75,42 102,60 129,35 156,48 183,28 210,40" fill="none" stroke="#1A5FAA" stroke-width="1.5" stroke-dasharray="3,2"/>
+            <text x="40" y="100" font-size="7" fill="#6B7589" font-family="Space Mono,monospace">Q1</text>
+            <text x="67" y="100" font-size="7" fill="#6B7589" font-family="Space Mono,monospace">Q2</text>
+            <text x="94" y="100" font-size="7" fill="#6B7589" font-family="Space Mono,monospace">Q3</text>
+            <text x="121" y="100" font-size="7" fill="#6B7589" font-family="Space Mono,monospace">Q4</text>
+            <text x="148" y="100" font-size="7" fill="#6B7589" font-family="Space Mono,monospace">Q5</text>
+            <text x="175" y="100" font-size="7" fill="#6B7589" font-family="Space Mono,monospace">Q6</text>
+            <text x="202" y="100" font-size="7" fill="#6B7589" font-family="Space Mono,monospace">Q7</text>
+            <text x="230" y="35" font-size="8" fill="#1A5FAA" font-family="Space Mono,monospace" font-weight="700">↑ 34%</text>
+          </svg>
+        </div>
+        <div class="proj-body">
+          <div class="proj-tag-row">
+            <span class="proj-tag">Power BI</span>
+            <span class="proj-tag">Dashboard</span>
+          </div>
+          <div class="proj-title">Sales Performance Dashboard</div>
+          <div class="proj-desc">Interactive dashboard analyzing sales trends, revenue patterns, and performance KPIs across multiple time periods.</div>
+          <div class="proj-tools">
+            <span class="proj-tool">Power BI</span>
+            <span class="proj-tool">Excel</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="proj-card reveal reveal-d2">
+        <div class="proj-preview" style="background:linear-gradient(135deg,#EBF4FD,#d4e9f9)">
+          <svg viewBox="0 0 260 110" xmlns="http://www.w3.org/2000/svg">
+            <text x="8" y="14" font-size="9" fill="#1A5FAA" font-family="Space Mono,monospace" font-weight="700">CUSTOMER SEGMENTS</text>
+            <line x1="30" y1="20" x2="30" y2="90" stroke="#C8E1F8" stroke-width="0.8"/>
+            <line x1="30" y1="90" x2="255" y2="90" stroke="#C8E1F8" stroke-width="0.8"/>
+            <line x1="30" y1="55" x2="255" y2="55" stroke="#C8E1F8" stroke-width="0.5" stroke-dasharray="3,3"/>
+            <line x1="142" y1="20" x2="142" y2="90" stroke="#C8E1F8" stroke-width="0.5" stroke-dasharray="3,3"/>
+            <circle cx="65" cy="35" r="7" fill="#3B8FE0" opacity=".7"/>
+            <circle cx="80" cy="45" r="5" fill="#3B8FE0" opacity=".6"/>
+            <circle cx="55" cy="42" r="6" fill="#3B8FE0" opacity=".6"/>
+            <circle cx="72" cy="30" r="4" fill="#3B8FE0" opacity=".5"/>
+            <text x="44" y="22" font-size="7.5" fill="#1A5FAA" font-family="Space Mono,monospace" font-weight="700">High Value</text>
+            <circle cx="175" cy="72" r="8" fill="#90C3F1" opacity=".7"/>
+            <circle cx="190" cy="65" r="5" fill="#90C3F1" opacity=".6"/>
+            <circle cx="165" cy="78" r="6" fill="#90C3F1" opacity=".6"/>
+            <circle cx="185" cy="80" r="4" fill="#90C3F1" opacity=".5"/>
+            <text x="162" y="97" font-size="7.5" fill="#1A5FAA" font-family="Space Mono,monospace" font-weight="700">Occasional</text>
+            <circle cx="115" cy="50" r="6" fill="#1A5FAA" opacity=".65"/>
+            <circle cx="125" cy="60" r="5" fill="#1A5FAA" opacity=".55"/>
+            <circle cx="108" cy="62" r="4" fill="#1A5FAA" opacity=".5"/>
+            <text x="95" y="42" font-size="7.5" fill="#1A5FAA" font-family="Space Mono,monospace" font-weight="700">Regular</text>
+          </svg>
+        </div>
+        <div class="proj-body">
+          <div class="proj-tag-row">
+            <span class="proj-tag">Python</span>
+            <span class="proj-tag">Analysis</span>
+          </div>
+          <div class="proj-title">Customer Behavior Analysis</div>
+          <div class="proj-desc">Analyzed customer data to identify purchasing patterns, behavioral segments, and actionable segmentation insights.</div>
+          <div class="proj-tools">
+            <span class="proj-tool">Python</span>
+            <span class="proj-tool">Pandas</span>
+            <span class="proj-tool">Matplotlib</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="proj-card reveal reveal-d3">
+        <div class="proj-preview" style="background:linear-gradient(135deg,#EBF4FD,#C8E1F8)">
+          <svg viewBox="0 0 260 110" xmlns="http://www.w3.org/2000/svg">
+            <text x="8" y="14" font-size="9" fill="#1A5FAA" font-family="Space Mono,monospace" font-weight="700">HR ANALYTICS</text>
+            <circle cx="65" cy="65" r="30" fill="none" stroke="#C8E1F8" stroke-width="12"/>
+            <circle cx="65" cy="65" r="30" fill="none" stroke="#3B8FE0" stroke-width="12" stroke-dasharray="90 100" stroke-dashoffset="-25" stroke-linecap="round"/>
+            <circle cx="65" cy="65" r="30" fill="none" stroke="#1A5FAA" stroke-width="12" stroke-dasharray="35 100" stroke-dashoffset="-115" stroke-linecap="round"/>
+            <text x="65" y="62" text-anchor="middle" font-size="13" fill="#0D3D72" font-family="Space Mono,monospace" font-weight="700">87%</text>
+            <text x="65" y="73" text-anchor="middle" font-size="6.5" fill="#6B7589" font-family="Space Mono,monospace">Retention</text>
+            <text x="112" y="32" font-size="7.5" fill="#6B7589" font-family="Space Mono,monospace">Performance</text>
+            <rect x="112" y="36" width="80" height="8" rx="4" fill="#EBF4FD"/>
+            <rect x="112" y="36" width="68" height="8" rx="4" fill="#3B8FE0"/>
+            <text x="197" y="43" font-size="7" fill="#1A5FAA" font-family="Space Mono,monospace">85%</text>
+            <text x="112" y="56" font-size="7.5" fill="#6B7589" font-family="Space Mono,monospace">Hiring Rate</text>
+            <rect x="112" y="60" width="80" height="8" rx="4" fill="#EBF4FD"/>
+            <rect x="112" y="60" width="55" height="8" rx="4" fill="#1A5FAA"/>
+            <text x="172" y="67" font-size="7" fill="#1A5FAA" font-family="Space Mono,monospace">69%</text>
+            <text x="112" y="80" font-size="7.5" fill="#6B7589" font-family="Space Mono,monospace">Satisfaction</text>
+            <rect x="112" y="84" width="80" height="8" rx="4" fill="#EBF4FD"/>
+            <rect x="112" y="84" width="72" height="8" rx="4" fill="#90C3F1"/>
+            <text x="189" y="91" font-size="7" fill="#1A5FAA" font-family="Space Mono,monospace">90%</text>
+          </svg>
+        </div>
+        <div class="proj-body">
+          <div class="proj-tag-row">
+            <span class="proj-tag">Power BI</span>
+            <span class="proj-tag">HR Analytics</span>
+          </div>
+          <div class="proj-title">HR Analytics Dashboard</div>
+          <div class="proj-desc">Comprehensive dashboard visualizing employee performance, salary distribution, hiring trends, and retention metrics.</div>
+          <div class="proj-tools">
+            <span class="proj-tool">Power BI</span>
+            <span class="proj-tool">Excel</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════ -->
+<!-- EXPERIENCE -->
+<!-- ══════════════════════════════════════════ -->
+<section id="experience">
+  <div class="sec-inner">
+    <div class="reveal">
+      <div class="sec-label">Work History</div>
+      <h2 class="sec-title">Experience</h2>
+      <p class="sec-sub">Building real-world experience through hands-on freelance projects and continuous skill development.</p>
+    </div>
+    <div class="exp-timeline">
+      <div class="exp-item reveal">
+        <div class="exp-dot"></div>
+        <div class="exp-date">2022 — Present</div>
+        <div class="exp-role">Freelance Data Analyst</div>
+        <div class="exp-company">Independent · Remote</div>
+        <div class="exp-desc">
+          Delivered end-to-end data solutions for various clients across industries — handling everything from raw data collection and cleaning to building interactive dashboards and generating actionable business reports. Developed strong communication skills by presenting complex data findings in simple, executive-ready formats.
+        </div>
+        <div class="exp-tags">
+          <span class="exp-tag">Data Cleaning</span>
+          <span class="exp-tag">Power BI Dashboards</span>
+          <span class="exp-tag">Business Reporting</span>
+          <span class="exp-tag">Python Automation</span>
+          <span class="exp-tag">SQL Querying</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════ -->
+<!-- CONTACT -->
+<!-- ══════════════════════════════════════════ -->
+<section id="contact" style="padding:100px 2.5rem">
+  <div class="contact-inner">
+    <div>
+      <div class="contact-label">Let's Work Together</div>
+      <h2 class="contact-title">Ready to turn your data into decisions?</h2>
+      <p class="contact-sub">Whether you need a dashboard, a deep analysis, or clean data — I'm here to help. Let's talk.</p>
+      <div class="contact-item">
+        <span class="ci-icon"><i class="fa-solid fa-envelope" style="color: rgb(255, 255, 255);"></i></span>
+        <div class="ci-text">
+          <div class="ci-label">EMAIL</div>
+          <a href="mailto:ismail.mohamed.data@gmail.com">ismail.mohamed.data@gmail.com</a>
+        </div>
+      </div>
+      <div class="contact-item">
+        <span class="ci-icon"><i class="fa-solid fa-phone-flip" style="color: rgb(255, 255, 255);"></i></span>
+        <div class="ci-text">
+          <div class="ci-label">PHONE / WHATSAPP</div>
+          <a href="tel:01012345678">01012345678</a>
+        </div>
+      </div>
+      <div style="margin-top:28px">
+        <a href="Ismail_Mohamed_CV.pdf" download="Ismail_Mohamed_CV.pdf" class="btn-primary">
+          <i class="fa-solid fa-download"></i> Download Full CV
+        </a>
+      </div>
+    </div>
+
+    <form class="contact-form" action="mailto:ismail.mohamed.data@gmail.com" method="POST" enctype="text/plain" onsubmit="handleSubmit(event)">
+      <div class="form-row">
+        <label class="form-label">Full Name</label>
+        <input class="form-input" type="text" placeholder="Your name" required />
+      </div>
+      <div class="form-row">
+        <label class="form-label">Email Address</label>
+        <input class="form-input" type="email" placeholder="your@email.com" required />
+      </div>
+      <div class="form-row">
+        <label class="form-label">Message</label>
+        <textarea class="form-textarea" placeholder="Tell me about your project..." required></textarea>
+      </div>
+      <button type="submit" class="form-submit">Send Message</button>
+    </form>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <span>© 2026 <b>Ismail Mohamed</b> · Data Analyst</span>
+  <span style="display:flex;gap:16px">
+    <a href="#about" onclick="scrollToSection(event,'about')" style="color:rgba(255,255,255,.4);text-decoration:none;font-size:12px;transition:color .2s" onmouseover="this.style.color='rgba(255,255,255,.8)'" onmouseout="this.style.color='rgba(255,255,255,.4)'">About</a>
+    <a href="#skills" onclick="scrollToSection(event,'skills')" style="color:rgba(255,255,255,.4);text-decoration:none;font-size:12px;transition:color .2s" onmouseover="this.style.color='rgba(255,255,255,.8)'" onmouseout="this.style.color='rgba(255,255,255,.4)'">Skills</a>
+    <a href="#projects" onclick="scrollToSection(event,'projects')" style="color:rgba(255,255,255,.4);text-decoration:none;font-size:12px;transition:color .2s" onmouseover="this.style.color='rgba(255,255,255,.8)'" onmouseout="this.style.color='rgba(255,255,255,.4)'">Projects</a>
+    <a href="#contact" onclick="scrollToSection(event,'contact')" style="color:rgba(255,255,255,.4);text-decoration:none;font-size:12px;transition:color .2s" onmouseover="this.style.color='rgba(255,255,255,.8)'" onmouseout="this.style.color='rgba(255,255,255,.4)'">Contact</a>
+  </span>
+</footer>
+
+<!-- Portfolio Script -->
+<script src="script.js"></script>
+</body>
+</html>
